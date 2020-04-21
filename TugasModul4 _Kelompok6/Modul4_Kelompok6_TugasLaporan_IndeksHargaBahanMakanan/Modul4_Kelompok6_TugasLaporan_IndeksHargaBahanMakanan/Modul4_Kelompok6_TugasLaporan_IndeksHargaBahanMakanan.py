@@ -16,9 +16,9 @@ g = Hypermart.hewani("Susu = Rp. 26,950/liter", "Telur = Rp. 15,000/10pcs", "Fil
 h = Hypermart.mie("Indomie Goreng = Rp. 2,100/pcs", "Indomie Rebus = Rp. 2,167/pcs", "Mie Sedaap Goreng = Rp. 2,180/pcs", "Mie Sedaap Rebus = Rp. 2,200/pcs")
 
 i = Superindo.buah("Jeruk = Rp. 4,290/100gr", "Apel = Rp. 4,990/100gr", "Melon = Rp. 2,295/100gr", "Semangka Merah = Rp. 1,195/100gr")
-j = Superindo.sayur("Buncis = Rp. 2,695/100gr", "Cabai = Rp. 9,993/100gr", "Kembang Kol = Rp. 3,895/100gr", "Jagung = Rp. 4,833/pcs")
-k = Superindo.hewani("Susu = Rp. 16,322/liter", "Telur = Rp. 40,450/10pcs", "Fillet Ayam = Rp. 6,995/100gr", "Cumi = Rp. 9,495/100gr")
-l = Superindo.mie("Indomie Goreng = Rp. 2,190/pcs", "Indomie Rebus = Rp. 2,390/pcs", "Mie Sedaap Goreng = Rp. 2,500/pcs", "Mie Sedaap Rebus = Rp. 2,200/pcs")
+k = Superindo.sayur("Buncis = Rp. 2,695/100gr", "Cabai = Rp. 9,993/100gr", "Kembang Kol = Rp. 3,895/100gr", "Jagung = Rp. 4,833/pcs")
+l = Superindo.hewani("Susu = Rp. 16,322/liter", "Telur = Rp. 40,450/10pcs", "Fillet Ayam = Rp. 6,995/100gr", "Cumi = Rp. 9,495/100gr")
+m = Superindo.mie("Indomie Goreng = Rp. 2,190/pcs", "Indomie Rebus = Rp. 2,390/pcs", "Mie Sedaap Goreng = Rp. 2,500/pcs", "Mie Sedaap Rebus = Rp. 2,200/pcs")
 
 while j != "tidak" or j != "Tidak":
     print("Jenis Makanan Apa yang Ingin Anda Beli?")
@@ -40,10 +40,10 @@ while j != "tidak" or j != "Tidak":
         if j == "ya" or j == "Ya":
             print("Selamat Berbelanja.\n")
         elif j == "tidak" or j == "Tidak":
-            print("Terimakasih sudah menggunakan aplikasi ini.")
+            print("Terimakasih sudah menggunakan aplikasi ini. \n")
             break
         else:
-            print("Pilihan tidak tersedia.")
+            print("Pilihan tidak tersedia.\n")
     
     #harga sayur
     elif j == "b" or j == "B":
@@ -51,19 +51,19 @@ while j != "tidak" or j != "Tidak":
         #harga di Carrefour
         b.hargasayur()
         #harga di Hypermart
-
+        f.hargasayur()
         #harga di Superindo
-
+        k.hargasayur()
         print("Apakah anda masih ingin berbelanja?")
         print("Ya.\nTidak.")
         j = input("Masukkan pilihan anda: ")
         if j == "ya" or j == "Ya":
             print("Selamat Berbelanja.\n")
         elif j == "tidak" or j == "Tidak":
-            print("Terimakasih sudah menggunakan aplikasi ini.")
+            print("Terimakasih sudah menggunakan aplikasi ini. \n")
             break
         else:
-            print("Pilihan tidak tersedia.")
+            print("Pilihan tidak tersedia. \n")
 
     #harga produk hewani
     elif j == "c" or j == "C":
@@ -71,19 +71,19 @@ while j != "tidak" or j != "Tidak":
         #harga di Carrefour
         c.hargahewani()
         #harga di Hypermart
-
+        g.hargahewani()
         #harga di Superindo
-
-        print("Apakah anda masih ingin berbelanja?")
+        l.hargahewani()
+        print("Apakah anda masih ingin berbelanja?\n")
         print("Ya.\nTidak.")
         j = input("Masukkan pilihan anda: ")
         if j == "ya" or j == "Ya":
             print("Selamat Berbelanja.\n")
         elif j == "tidak" or j == "Tidak":
-            print("Terimakasih sudah menggunakan aplikasi ini.")
+            print("Terimakasih sudah menggunakan aplikasi ini. \n")
             break
         else:
-            print("Pilihan tidak tersedia.")
+            print("Pilihan tidak tersedia. \n")
 
     #harga mie instan
     elif j == "d" or j == "D":
@@ -91,20 +91,20 @@ while j != "tidak" or j != "Tidak":
         #harga di Carrefour
         d.hargamie()
         #harga di Hypermart
-
+        h.hargamie()
         #harga di Superindo
-
+        m.hargamie()
         print("Apakah anda masih ingin berbelanja?")
         print("Ya.\nTidak.")
         j = input("Masukkan pilihan anda: ")
         if j == "ya" or j == "Ya":
             print("Selamat Berbelanja.\n")
         elif j == "tidak" or j == "Tidak":
-            print("Terimakasih sudah menggunakan aplikasi ini.")
+            print("Terimakasih sudah menggunakan aplikasi ini. \n")
             break
         else:
-            print("Pilihan tidak tersedia.")
+            print("Pilihan tidak tersedia. \n")
  
     else:
-        print("Pilihan tidak tersedia.")
+        print("Pilihan tidak tersedia. \n")
 
