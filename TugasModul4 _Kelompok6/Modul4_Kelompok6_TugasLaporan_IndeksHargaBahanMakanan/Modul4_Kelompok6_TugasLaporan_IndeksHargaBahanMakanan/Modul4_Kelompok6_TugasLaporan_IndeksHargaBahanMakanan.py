@@ -1,6 +1,7 @@
 import Carrefour
 import Hypermart
 import Superindo
+import Termurah
 
 print("Indeks Harga Makanan Carrefour, Hypermart, dan Superindo\n")
 
@@ -20,6 +21,13 @@ k = Superindo.sayur("Buncis = Rp. 2,695/100gr", "Cabai = Rp. 9,993/100gr", "Kemb
 l = Superindo.hewani("Susu = Rp. 16,322/liter", "Telur = Rp. 40,450/10pcs", "Fillet Ayam = Rp. 6,995/100gr", "Cumi = Rp. 9,495/100gr")
 m = Superindo.mie("Indomie Goreng = Rp. 2,190/pcs", "Indomie Rebus = Rp. 2,390/pcs", "Mie Sedaap Goreng = Rp. 2,500/pcs", "Mie Sedaap Rebus = Rp. 2,200/pcs")
 
+n = Termurah.buah("Jeruk [Carrefour] = Rp. 2,490/100gr", "Apel [Carrefour] = Rp. 4,690/100gr", "Melon [Hypermart] = Rp. 1,850/100gr", "Semangka Merah [Hypermart] = Rp. 750/100gr")
+o = Termurah.sayur("Buncis [Hypermart] = Rp. 1,990/100gr", "Cabai [Hypermart] = Rp. 3,890/100gr", "Kembang Kol [Hypermart] = Rp. Rp. 3,590/100gr", "Jagung [Carrefour] = Rp. 1,190/100gr")
+p = Termurah.hewani("Susu [Superindo] = Rp. 16,322/liter", "Telur [Hypermart] = Rp. 15,000/10pcs", "Fillet Ayam [Carrefour] = Rp. 4,250/100gr", "Cumi [Hypermart] = Rp. 7,890/100gr")
+q = Termurah.mie("Indomie Goreng [Hypermart] = Rp. 2,100/pcs", "Indomie Remus [Hypermart] = Rp. 2,167/pcs", "Mie Sedaap Goreng [Hypermart] = Rp. 2,180/pcs", "Mie Sedaap Rebus [Carrefour] = Rp. 2,190/pcs")
+
+r = Termurah.rekomendasi("Hypermart")
+
 while j != "tidak" or j != "Tidak":
     print("Jenis Makanan Apa yang Ingin Anda Beli?")
     print("a. Buah-buahan\nb. Sayur-sayuran\nc. Produk Hewani\nd. Mie Instan")
@@ -34,6 +42,10 @@ while j != "tidak" or j != "Tidak":
         e.hargabuah()
         #harga di Superindo
         i.hargabuah()
+        #harga termurah
+        n.buahtermurah()
+        #rekomendasi
+        r.rek()
         print("Apakah anda masih ingin berbelanja?")
         print("Ya.\nTidak.")
         j = input("Masukkan pilihan anda: ")
@@ -54,6 +66,10 @@ while j != "tidak" or j != "Tidak":
         f.hargasayur()
         #harga di Superindo
         k.hargasayur()
+        #harga termurah
+        o.sayurtermurah()
+        #rekomendasi
+        s.rek()
         print("Apakah anda masih ingin berbelanja?")
         print("Ya.\nTidak.")
         j = input("Masukkan pilihan anda: ")
@@ -74,6 +90,10 @@ while j != "tidak" or j != "Tidak":
         g.hargahewani()
         #harga di Superindo
         l.hargahewani()
+        #harga termurah
+        p.hewanitermurah()
+        #rekomendasi
+        t.rek()
         print("Apakah anda masih ingin berbelanja?\n")
         print("Ya.\nTidak.")
         j = input("Masukkan pilihan anda: ")
@@ -94,6 +114,10 @@ while j != "tidak" or j != "Tidak":
         h.hargamie()
         #harga di Superindo
         m.hargamie()
+        #harga termurah
+        q.mietermurah()
+        #rekomendasi
+        u.rek()
         print("Apakah anda masih ingin berbelanja?")
         print("Ya.\nTidak.")
         j = input("Masukkan pilihan anda: ")
