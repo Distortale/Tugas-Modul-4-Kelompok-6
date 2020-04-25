@@ -27,6 +27,9 @@ p = Termurah.hewani("Susu [Superindo] = Rp. 16,322/liter", "Telur [Hypermart] = 
 q = Termurah.mie("Indomie Goreng [Hypermart] = Rp. 2,100/pcs", "Indomie Remus [Hypermart] = Rp. 2,167/pcs", "Mie Sedaap Goreng [Hypermart] = Rp. 2,180/pcs", "Mie Sedaap Rebus [Carrefour] = Rp. 2,190/pcs")
 
 r = Termurah.rekomendasi("Hypermart")
+s = Termurah.rekomendasi("Hypermart")
+t = Termurah.rekomendasi("Hypermart")
+u = Termurah.rekomendasi("Hypermart")
 
 while j != "tidak" or j != "Tidak":
     print("Jenis Makanan Apa yang Ingin Anda Beli?")
